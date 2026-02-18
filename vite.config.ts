@@ -9,7 +9,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/megawalk-v2/",
+  base: "./",
   build: {
     outDir: "dist",
     rollupOptions: {
