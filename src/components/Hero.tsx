@@ -9,9 +9,10 @@ const StyledHero = styled.section`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("https://placehold.co/1920x1080/141B2D/1E2A45?text=Hero+Image");
+  background-image: url("https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430317/IMG_4658_ajtq6c.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
+  background-repeat: no-repeat;
 
   &::before {
     content: "";

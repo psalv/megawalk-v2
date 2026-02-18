@@ -52,7 +52,7 @@ const Label = styled.div`
 `;
 
 const ITEMS = [
-  { icon: "🚶", label: "Walk about 40km" },
+  { icon: "🚶", label: "Walk like 40km" },
   { icon: "🍷", label: "Drink sangria" },
   { icon: "🎉", label: "Have fun" },
   { icon: "🐕", label: "Help dogs" },

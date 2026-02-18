@@ -79,7 +79,7 @@ export function RuffRiders() {
       <Container>
         <ImageWrapper>
           <Image
-            src="https://placehold.co/320x320/1F6FFF/EAF2FF?text=Ruff+Riders"
+            src="https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430308/IMG_3513_frnlfg.jpg"
             alt="Ruff Riders Animal Transport"
           />
         </ImageWrapper>

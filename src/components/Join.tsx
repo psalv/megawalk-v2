@@ -97,7 +97,7 @@ export function Join() {
         </Content>
         <ImageWrapper>
           <Image
-            src="https://placehold.co/400x400/7A2CFF/EAF2FF?text=Join+Us"
+            src="https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430311/IMG_3534_v4ymtj.jpg"
             alt="Join Megawalk"
           />
         </ImageWrapper>

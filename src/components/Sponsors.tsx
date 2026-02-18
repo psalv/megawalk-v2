@@ -71,13 +71,11 @@ const CTALink = styled.a`
   }
 `;
 
-const PLACEHOLDER_SPONSORS = [
-  { name: "Sponsor 1", logo: "https://placehold.co/200x100/1E2A45/9FB3D9?text=Sponsor+1" },
-  { name: "Sponsor 2", logo: "https://placehold.co/200x100/1E2A45/9FB3D9?text=Sponsor+2" },
-  { name: "Sponsor 3", logo: "https://placehold.co/200x100/1E2A45/9FB3D9?text=Sponsor+3" },
-  { name: "Sponsor 4", logo: "https://placehold.co/200x100/1E2A45/9FB3D9?text=Sponsor+4" },
-  { name: "Sponsor 5", logo: "https://placehold.co/200x100/1E2A45/9FB3D9?text=Sponsor+5" },
-  { name: "Sponsor 6", logo: "https://placehold.co/200x100/1E2A45/9FB3D9?text=Sponsor+6" },
+const SPONSORS = [
+  { name: "Tenor", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430972/tenor_logo_wvgx51.png" },
+  { name: "Monkey Tree", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430966/monkeytree_obpjfi.png" },
+  { name: "Tacofino", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771431017/tacofino-removebg-preview_dwrpkq.png" },
+  { name: "Tealwood", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771431017/tealwood-removebg-preview_g1mqio.png" },
 ];
 
 export function Sponsors() {
@@ -85,7 +83,7 @@ export function Sponsors() {
     <StyledSection>
       <Title>MEGASPONSORS</Title>
       <Grid>
-        {PLACEHOLDER_SPONSORS.map((sponsor, i) => (
+        {SPONSORS.map((sponsor, i) => (
           <SponsorCard key={i}>
             <SponsorLogo src={sponsor.logo} alt={sponsor.name} />
           </SponsorCard>
