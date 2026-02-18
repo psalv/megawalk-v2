@@ -28,11 +28,11 @@ const BrandText = styled.span`
   font-size: 32px;
   color: ${colors.textMain};
   white-space: nowrap;
-  padding: 0 24px;
+  padding: 0 12px;
 
   &::after {
     content: "✦";
-    padding-left: 24px;
+    padding-left: 30px;
     color: ${colors.accent};
   }
 `;
