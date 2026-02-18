@@ -5,7 +5,6 @@ import { WhatItIs } from "./components/WhatItIs";
 import { RuffRiders } from "./components/RuffRiders";
 import { Join } from "./components/Join";
 import { Sponsors } from "./components/Sponsors";
-import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
       <RuffRiders />
       <Join />
       <Sponsors />
-      <Footer />
+      <Header />
     </>
   );
 }

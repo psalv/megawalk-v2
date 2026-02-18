@@ -32,7 +32,7 @@ const BrandText = styled.span`
 
   &::after {
     content: "✦";
-    padding-left: 30px;
+    padding-left: 27px;
     color: ${colors.accent};
   }
 `;
