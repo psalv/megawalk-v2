@@ -1,56 +1,60 @@
 import styled from "styled-components";
+import { colors } from "../theme";
 
-const StyledHero = styled.main`
-  flex: 1;
+const StyledHero = styled.section`
+  position: relative;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 64px 32px;
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #ffffff;
+  background-image: url("https://placehold.co/1920x1080/141B2D/1E2A45?text=Hero+Image");
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(11, 15, 25, 0.4) 0%,
+      rgba(11, 15, 25, 0.8) 100%
+    );
+  }
+`;
+
+const Content = styled.div`
+  position: relative;
+  z-index: 1;
+  padding: 32px;
 `;
 
 const Title = styled.h1`
-  font-size: 48px;
-  font-weight: 800;
+  font-family: "Fugaz One", cursive;
+  font-size: clamp(48px, 10vw, 96px);
+  color: ${colors.textMain};
   margin: 0 0 16px 0;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 `;
 
 const Subtitle = styled.p`
-  font-size: 20px;
-  font-weight: 400;
-  margin: 0 0 32px 0;
-  max-width: 600px;
-  opacity: 0.9;
-`;
-
-const Button = styled.button`
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #764ba2;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 500;
+  color: ${colors.textMuted};
+  margin: 0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 `;
 
 export function Hero() {
   return (
     <StyledHero>
-      <Title>Megawalk 2025</Title>
-      <Subtitle>
-        Join us for an unforgettable walking event. Connect with the community,
-        explore new paths, and challenge yourself.
-      </Subtitle>
-      <Button>Register Now</Button>
+      <Content>
+        <Title>WALKING THE DOGS</Title>
+        <Subtitle>July 4 2026, Comox BC</Subtitle>
+      </Content>
     </StyledHero>
   );
 }
