@@ -88,7 +88,7 @@ export function Join() {
             Ready to walk a long distance at a leisurely pace? All are welcome.
           </Description>
           <Button
-            href="https://forms.google.com"
+            href="https://forms.gle/wWdB4zrUJkXBZ49k7"
             target="_blank"
             rel="noopener noreferrer"
           >

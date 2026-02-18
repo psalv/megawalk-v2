@@ -72,10 +72,22 @@ const CTALink = styled.a`
 `;
 
 const SPONSORS = [
-  { name: "Tenor", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430972/tenor_logo_wvgx51.png" },
-  { name: "Monkey Tree", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430966/monkeytree_obpjfi.png" },
-  { name: "Tacofino", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771431017/tacofino-removebg-preview_dwrpkq.png" },
-  { name: "Tealwood", logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771431017/tealwood-removebg-preview_g1mqio.png" },
+  {
+    name: "Tenor",
+    logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430972/tenor_logo_wvgx51.png",
+  },
+  {
+    name: "Monkey Tree",
+    logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430966/monkeytree_obpjfi.png",
+  },
+  {
+    name: "Tacofino",
+    logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771431017/tacofino-removebg-preview_dwrpkq.png",
+  },
+  {
+    name: "Tealwood",
+    logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771431017/tealwood-removebg-preview_g1mqio.png",
+  },
 ];
 
 export function Sponsors() {
@@ -90,7 +102,11 @@ export function Sponsors() {
         ))}
       </Grid>
       <CTAWrapper>
-        <CTALink href="mailto:sponsor@megawalk.com">
+        <CTALink
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://forms.gle/WDsdfukLdn4LQihw9"
+        >
           BECOME A MEGASPONSOR
         </CTALink>
       </CTAWrapper>
