@@ -53,10 +53,11 @@ const SponsorCard = styled.div`
   }
 `;
 
-const SponsorLogo = styled.img`
+const SponsorLogo = styled.img<{ $padding?: string }>`
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  padding: ${({ $padding }) => $padding ?? "unset"};
 
   @media (max-width: 768px) {
     max-height: 80px;
@@ -90,6 +91,7 @@ const SPONSORS = [
   {
     name: "Tenor",
     logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430972/tenor_logo_wvgx51.png",
+    padding: "0 82px"
   },
   {
     name: "Monkey Tree",
@@ -112,7 +114,7 @@ export function Sponsors() {
       <Grid>
         {SPONSORS.map((sponsor, i) => (
           <SponsorCard key={i}>
-            <SponsorLogo src={sponsor.logo} alt={sponsor.name} />
+            <SponsorLogo src={sponsor.logo} alt={sponsor.name} $padding={sponsor.padding} />
           </SponsorCard>
         ))}
       </Grid>
