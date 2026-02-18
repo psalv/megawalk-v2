@@ -40,12 +40,12 @@ const SponsorCard = styled.div`
   align-items: center;
   justify-content: center;
   aspect-ratio: 16 / 9;
-  overflow: hidden;
   transition: border-color 0.2s ease;
 
   @media (max-width: 768px) {
-    padding: 16px;
-    aspect-ratio: 2 / 1;
+    padding: 24px;
+    aspect-ratio: unset;
+    min-height: 120px;
   }
 
   &:hover {
@@ -57,6 +57,10 @@ const SponsorLogo = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    max-height: 80px;
+  }
 `;
 
 const CTAWrapper = styled.div`
