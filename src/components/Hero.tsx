@@ -48,12 +48,22 @@ const Subtitle = styled.p`
   text-transform: uppercase;
 `;
 
+const Subsubtitle = styled.p`
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 500;
+  color: ${colors.textMuted};
+  margin: 0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+`;
+
 export function Hero() {
   return (
     <StyledHero>
       <Content>
+        <Subsubtitle>MEGAWALK 2026</Subsubtitle>
         <Title>WALKING THE DOGS</Title>
-        <Subtitle>July 4 2026, Comox BC</Subtitle>
+        <Subtitle>July 4, Comox BC</Subtitle>
       </Content>
     </StyledHero>
   );

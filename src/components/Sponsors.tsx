@@ -53,6 +53,7 @@ const CTAWrapper = styled.div`
 `;
 
 const CTALink = styled.a`
+  font-family: "Fugaz One", cursive;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -92,7 +93,7 @@ export function Sponsors() {
       </Grid>
       <CTAWrapper>
         <CTALink href="mailto:sponsor@megawalk.com">
-          Become a MEGASPONSOR
+          BECOME A MEGASPONSOR
         </CTALink>
       </CTAWrapper>
     </StyledSection>

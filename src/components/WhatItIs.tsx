@@ -44,6 +44,8 @@ const Icon = styled.div`
 `;
 
 const Label = styled.div`
+  font-family: "Fugaz One", cursive;
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
   color: ${colors.textMain};
@@ -59,7 +61,7 @@ const ITEMS = [
 export function WhatItIs() {
   return (
     <StyledSection>
-      <Title>WHAT IS A MEGAWALK?</Title>
+      <Title>WHAT IS THE MEGAWALK?</Title>
       <Grid>
         {ITEMS.map((item, i) => (
           <Item key={i}>

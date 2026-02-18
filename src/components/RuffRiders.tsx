@@ -55,6 +55,7 @@ const Description = styled.p`
 `;
 
 const Link = styled.a`
+  font-family: "Fugaz One", cursive;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -83,7 +84,7 @@ export function RuffRiders() {
           />
         </ImageWrapper>
         <Content>
-          <Title>Walking for dogs?</Title>
+          <Title>WALKING FOR DOGS?</Title>
           <Description>
             Do you love the dogs? We do.
             <br />
@@ -105,7 +106,7 @@ export function RuffRiders() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit Ruff Riders
+            VISIT RUFF RIDERS
           </Link>
         </Content>
       </Container>

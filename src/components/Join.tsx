@@ -38,6 +38,7 @@ const Description = styled.p`
 
 const Button = styled.a`
   display: inline-block;
+  font-family: "Fugaz One", cursive;
   padding: 16px 40px;
   font-size: 18px;
   font-weight: 700;
@@ -82,7 +83,7 @@ export function Join() {
     <StyledSection>
       <Container>
         <Content>
-          <Title>Become a MEGAWALKER</Title>
+          <Title>BECOME A MEGAWALKER</Title>
           <Description>
             Ready to walk a long distance at a leisurely pace? All are welcome.
           </Description>
@@ -91,7 +92,7 @@ export function Join() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Sign Up Now
+            LIVE YOUR DREAMS
           </Button>
         </Content>
         <ImageWrapper>
