@@ -24,7 +24,7 @@ const ScrollContainer = styled.div`
 `;
 
 const BrandText = styled.span`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", Impact, sans-serif;
   font-size: 32px;
   color: ${colors.textMain};
   white-space: nowrap;

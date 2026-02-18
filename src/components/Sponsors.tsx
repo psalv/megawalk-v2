@@ -8,7 +8,7 @@ const StyledSection = styled.section`
 `;
 
 const Title = styled.h2`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   font-size: 36px;
   color: ${colors.textMain};
   text-align: center;
@@ -53,7 +53,7 @@ const CTAWrapper = styled.div`
 `;
 
 const CTALink = styled.a`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   display: inline-flex;
   align-items: center;
   gap: 8px;

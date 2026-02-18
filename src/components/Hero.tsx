@@ -32,7 +32,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   font-size: clamp(48px, 10vw, 96px);
   color: ${colors.textMain};
   margin: 0 0 16px 0;

@@ -41,7 +41,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   font-size: 36px;
   color: ${colors.textMain};
   margin: 0 0 24px 0;
@@ -55,7 +55,7 @@ const Description = styled.p`
 `;
 
 const Link = styled.a`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   display: inline-flex;
   align-items: center;
   gap: 8px;

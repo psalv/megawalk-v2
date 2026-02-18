@@ -8,7 +8,7 @@ const StyledSection = styled.section`
 `;
 
 const Title = styled.h2`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   font-size: 36px;
   color: ${colors.textMain};
   text-align: center;
@@ -44,7 +44,7 @@ const Icon = styled.div`
 `;
 
 const Label = styled.div`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;

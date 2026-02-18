@@ -23,7 +23,7 @@ const Content = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   font-size: 48px;
   color: ${colors.textMain};
   margin: 0 0 16px 0;
@@ -38,7 +38,7 @@ const Description = styled.p`
 
 const Button = styled.a`
   display: inline-block;
-  font-family: "Fugaz One", cursive;
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
   padding: 16px 40px;
   font-size: 18px;
   font-weight: 700;
