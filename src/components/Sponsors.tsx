@@ -5,6 +5,10 @@ const StyledSection = styled.section`
   padding: 80px 32px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 60px 16px;
+  }
 `;
 
 const Title = styled.h2`
@@ -23,6 +27,7 @@ const Grid = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 `;
 
@@ -35,7 +40,13 @@ const SponsorCard = styled.div`
   align-items: center;
   justify-content: center;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
   transition: border-color 0.2s ease;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    aspect-ratio: 2 / 1;
+  }
 
   &:hover {
     border-color: ${colors.primary};
