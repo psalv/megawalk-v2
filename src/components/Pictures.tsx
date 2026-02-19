@@ -30,27 +30,24 @@ const Picture = styled.img`
   border-radius: 8px;
 `;
 
-const IMAGES = [
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430317/IMG_3528_px48ui.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430317/IMG_4669_bevlkg.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430317/IMG_3527_fwlr3t.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430315/IMG_3519_wya3sq.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430314/IMG_0212_er7rjp.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430314/IMG_4677_vtzjum.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430314/IMG_0215_rvopj6.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430313/IMG_0224_xauolo.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430309/IMG_0229_eeorvq.jpg",
-  "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430011/846F210C-4309-47A4-B244-44BFEEC56410_q2bwcs.jpg",
-];
+function addCloudinaryWidth(url: string, width: number): string {
+  return url.replace("/upload/", `/upload/w_${width}/`);
+}
 
-export function Pictures() {
-  const images = [...IMAGES, ...IMAGES];
+interface PicturesProps {
+  images: string[];
+  maxWidth?: number;
+}
+
+export function Pictures({ images, maxWidth = 600 }: PicturesProps) {
+  const processedImages = images.map((url) => addCloudinaryWidth(url, maxWidth));
+  const duplicatedImages = [...processedImages, ...processedImages];
 
   return (
     <StyledPictures>
       <ScrollContainer>
-        {images.map((src, i) => (
-          <Picture key={i} src={src} alt={`Event photo ${(i % IMAGES.length) + 1}`} />
+        {duplicatedImages.map((src, i) => (
+          <Picture key={i} src={src} alt={`Event photo ${(i % images.length) + 1}`} />
         ))}
       </ScrollContainer>
     </StyledPictures>
