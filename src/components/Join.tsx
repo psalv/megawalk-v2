@@ -86,6 +86,9 @@ export function Join() {
           <Title>BECOME A MEGAWALKER</Title>
           <Description>
             Ready to walk a long distance at a leisurely pace? All are welcome.
+            <br/>
+            <br/>
+            2026 registration closes April 20
           </Description>
           <Button
             href="https://forms.gle/wWdB4zrUJkXBZ49k7"
