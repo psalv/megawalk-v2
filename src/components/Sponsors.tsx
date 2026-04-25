@@ -19,6 +19,22 @@ const Title = styled.h2`
   margin: 0 0 48px 0;
 `;
 
+const TierTitle = styled.h3`
+  font-family: "Fugaz One", "Fugaz One", Impact, sans-serifve;
+  font-size: 22px;
+  color: ${colors.textMuted};
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+`;
+
+const PlatinumPlusRow = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 56px;
+`;
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -51,6 +67,11 @@ const SponsorCard = styled.div`
   &:hover {
     border-color: ${colors.primary};
   }
+`;
+
+const PlatinumPlusCard = styled(SponsorCard)`
+  width: 100%;
+  max-width: 560px;
 `;
 
 const SponsorLogo = styled.img<{ $padding?: string }>`
@@ -87,11 +108,19 @@ const CTALink = styled.a`
   }
 `;
 
+const PLATINUM_PLUS_SPONSORS = [
+  {
+    name: "Waterloo Cheese Family",
+    logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1777080448/ChatGPT_Image_Apr_24_2026_09_27_20_PM_ickogu.png",
+    padding: "0 82px",
+  },
+];
+
 const SPONSORS = [
   {
     name: "Tenor",
     logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1771430972/tenor_logo_wvgx51.png",
-    padding: "0 82px"
+    padding: "0 82px",
   },
   {
     name: "Monkey Tree",
@@ -111,6 +140,15 @@ export function Sponsors() {
   return (
     <StyledSection>
       <Title>MEGASPONSORS</Title>
+      <TierTitle>Platinum Plus</TierTitle>
+      <PlatinumPlusRow>
+        {PLATINUM_PLUS_SPONSORS.map((sponsor, i) => (
+          <PlatinumPlusCard key={i}>
+            <SponsorLogo src={sponsor.logo} alt={sponsor.name} $padding={sponsor.padding} />
+          </PlatinumPlusCard>
+        ))}
+      </PlatinumPlusRow>
+      <TierTitle>Platinum</TierTitle>
       <Grid>
         {SPONSORS.map((sponsor, i) => (
           <SponsorCard key={i}>
