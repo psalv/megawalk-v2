@@ -29,12 +29,6 @@ const TierTitle = styled.h3`
   margin: 0 0 24px 0;
 `;
 
-const PlatinumPlusRow = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 56px;
-`;
-
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -67,11 +61,6 @@ const SponsorCard = styled.div`
   &:hover {
     border-color: ${colors.primary};
   }
-`;
-
-const PlatinumPlusCard = styled(SponsorCard)`
-  width: 100%;
-  max-width: 560px;
 `;
 
 const SponsorLogo = styled.img<{ $padding?: string }>`
@@ -114,6 +103,11 @@ const PLATINUM_PLUS_SPONSORS = [
     logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1777080448/ChatGPT_Image_Apr_24_2026_09_27_20_PM_ickogu.png",
     padding: "0 82px",
   },
+  {
+    name: "Gladstone Brewing Company",
+    logo: "https://res.cloudinary.com/dxwf2hzpd/image/upload/v1782524590/GLADSTONE-3_qhwp2n.png",
+    padding: "0 82px",
+  },
 ];
 
 const SPONSORS = [
@@ -141,18 +135,26 @@ export function Sponsors() {
     <StyledSection>
       <Title>MEGASPONSORS</Title>
       <TierTitle>Platinum Plus</TierTitle>
-      <PlatinumPlusRow>
+      <Grid>
         {PLATINUM_PLUS_SPONSORS.map((sponsor, i) => (
-          <PlatinumPlusCard key={i}>
-            <SponsorLogo src={sponsor.logo} alt={sponsor.name} $padding={sponsor.padding} />
-          </PlatinumPlusCard>
+          <SponsorCard key={i}>
+            <SponsorLogo
+              src={sponsor.logo}
+              alt={sponsor.name}
+              $padding={sponsor.padding}
+            />
+          </SponsorCard>
         ))}
-      </PlatinumPlusRow>
+      </Grid>
       <TierTitle>Platinum</TierTitle>
       <Grid>
         {SPONSORS.map((sponsor, i) => (
           <SponsorCard key={i}>
-            <SponsorLogo src={sponsor.logo} alt={sponsor.name} $padding={sponsor.padding} />
+            <SponsorLogo
+              src={sponsor.logo}
+              alt={sponsor.name}
+              $padding={sponsor.padding}
+            />
           </SponsorCard>
         ))}
       </Grid>
